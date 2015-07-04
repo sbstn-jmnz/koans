@@ -1,0 +1,11 @@
+Todo es un objeto
+Incluso nil es un objeto, no es una excepcion apuntando como en otros lenguajes.
+El objeto nil tiene metodos. Se puede usar nil.to_s, nil.inspect, and nil.nil? porque todos estos metodos estan definidos y heredados de la clase objeto.
+
+Por defecto, usr #[] devulve el valor si existe, y retoan nil si no existe, nil es el valor por defecto al recurerar datos de un hash con un key que no existe.
+
+#fetch entrega mas opciones:
+
+fetch(key_name): retorna el valor si existe la llave y eleva un KeyError si no
+fetch(key_name, default_value): retona el valor si existe, en caso sontrario retorna el default_value
+fetch(key_name {key} "default"): retorna el valor si existe, de otra forma corre el codigo y retorna ese valor
